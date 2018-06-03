@@ -1,9 +1,7 @@
 Initial upload!
 Creating problem!
 Resolving problem!
-<<<<<<< HEAD
 Branch change!
 Something
-=======
 Main change!
 
