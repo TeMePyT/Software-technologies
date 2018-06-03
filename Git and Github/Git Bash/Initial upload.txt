@@ -1,5 +1,9 @@
 First upload!
 Creating problem!
 Resolved problem!
+<<<<<<< HEAD
 Text from PC!
 Master branch text!
+=======
+Text from Github!
+>>>>>>> c2494fbc7ed680fb6a1adbd0d3a90c9b460d3044
