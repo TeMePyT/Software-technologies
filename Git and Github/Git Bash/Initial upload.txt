@@ -1,3 +1,5 @@
 First upload!
 Creating problem!
 Resolved problem!
+Text from PC!
+Master branch text!
