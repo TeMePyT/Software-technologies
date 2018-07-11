@@ -1,0 +1,11 @@
+function solution(input) {
+    let sorted = input.sort((a,b)=>b-a);
+    let count =0;
+    for (let item of sorted) {
+        console.log(item);
+        count++;
+        if (count===3) {
+            break;
+        }
+    }
+}

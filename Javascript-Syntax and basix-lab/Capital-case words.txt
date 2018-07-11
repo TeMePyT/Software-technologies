@@ -1,0 +1,6 @@
+function solution(input) {
+    let text = input.join(',');
+    let array = text.split(/\W+/).filter(x=>x.length>0).filter((x)=>x===x.toUpperCase());
+    array = array.join(', ');
+    console.log(array);
+}
