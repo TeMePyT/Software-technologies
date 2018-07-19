@@ -1,0 +1,24 @@
+<div class="container body-content">
+    <div class="row" id="format">
+        {{#each articles}}
+            <div class="col-md-6"  >
+                <article>
+                    <header>
+                        <h2 style="color:white">{{this.title}}</h2>
+                    </header>
+                    {{#if image}}<a href="article/details/{{this.id}}"><img src="{{this.image}}" width="400px" height="300px"/></a>{{/if}}
+                    <div id="myDiv"> <p style="color:white">{{this.content}}</p></div>
+                    <small class="author" style="color:white">
+                        {{this.User.fullName}}
+                    </small>
+                    <br>
+                    <footer>
+                        <div class="pull-right">
+                            <a class="btn btn-default btn-xs" href="/article/details/{{this.id}}">Read more &raquo;</a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        {{/each}}
+    </div>
+</div>

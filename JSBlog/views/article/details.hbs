@@ -1,0 +1,36 @@
+<div class="container body-content">
+    <div class="row">
+        <div class="col-md-12">
+            <article>
+                <header>
+                    <h2 style="color:white">{{article.title}}</h2>
+                </header>
+    {{#if article.image}}<img style="color:white" src="{{article.image}}" width="400px" height="300px"/>{{/if}}
+                <p style="color:white">
+                    {{article.content}}
+                </p>
+
+                <small class="author" style="color:white">
+                    {{article.User.fullName}}
+                </small>
+            </br>
+                {{#each article.Comments}}
+                    <span class="pull-left" style="color:white">{{this.User.fullName}}:&emsp;</span>
+                    <p style="color:yellow">{{this.content}}</p>
+                {{/each}}
+                {{#if user}}
+                <form class="form-inline" method="post"  action="/article/details/{{article.id}}/comment/add">
+                    <label class="sr-only" for="onlineFormInputName2">Comment</label>
+                    <input type="text" class="form-control mb2 mr-sm2" name="content" placeholder="Comment ..">
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                </form>
+                {{/if}}
+                <footer>
+                    <div class="pull-right">
+                        <a class="btn btn-default btn-xs" href="/">Back &raquo;</a>
+                    </div>
+                </footer>
+            </article>
+        </div>
+    </div>
+</div>
