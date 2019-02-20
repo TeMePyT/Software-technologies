@@ -4,7 +4,7 @@ module.exports = {
     database:{
         "development": {
             "username": "root",
-            "password": "TeMePyT198319854E4Enets@",
+            "password": "",
             "database": "blog",
             "host": "127.0.0.1",
             "dialect": "mysql",
